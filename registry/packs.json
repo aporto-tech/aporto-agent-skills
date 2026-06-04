@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "description": "Curated Aporto agent skill packs. Packs are many-to-many: one skill can belong to several specialties.",
+  "packs": [
+    {
+      "id": "engineering",
+      "name": "Engineering",
+      "description": "Code review, debugging, architecture, shipping, quality, deployment, and engineering workflow skills.",
+      "category": "software-engineering",
+      "tags": ["engineering", "code", "review", "debugging", "deployment"],
+      "skillIds": [
+        "gstack-review",
+        "gstack-investigate",
+        "gstack-plan-eng-review",
+        "gstack-health",
+        "gstack-ship",
+        "gstack-land-and-deploy",
+        "gstack-setup-deploy",
+        "gstack-document-release",
+        "gstack-context-save",
+        "gstack-context-restore",
+        "gstack-freeze",
+        "gstack-unfreeze",
+        "gstack-careful",
+        "gstack-guard",
+        "gstack-codex"
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "description": "Product design, visual QA, design systems, design exploration, and production HTML implementation.",
+      "category": "design",
+      "tags": ["design", "ui", "ux", "visual-qa", "frontend"],
+      "skillIds": [
+        "gstack-design-consultation",
+        "gstack-design-shotgun",
+        "gstack-design-review",
+        "gstack-plan-design-review",
+        "gstack-design-html",
+        "gstack-browse",
+        "gstack-qa"
+      ]
+    },
+    {
+      "id": "quality-assurance",
+      "name": "Quality Assurance",
+      "description": "Web QA, bug reports, browser testing, performance checks, canary monitoring, and regression detection.",
+      "category": "quality",
+      "tags": ["qa", "testing", "browser", "performance", "monitoring"],
+      "skillIds": [
+        "gstack-qa",
+        "gstack-qa-only",
+        "gstack-browse",
+        "gstack-benchmark",
+        "gstack-canary",
+        "gstack-health",
+        "gstack-design-review"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "description": "Security audit, safety guardrails, production-risk review, and destructive-command protection.",
+      "category": "security",
+      "tags": ["security", "audit", "safety", "risk", "production"],
+      "skillIds": [
+        "gstack-cso",
+        "gstack-careful",
+        "gstack-guard",
+        "gstack-review",
+        "gstack-freeze"
+      ]
+    },
+    {
+      "id": "developer-experience",
+      "name": "Developer Experience",
+      "description": "Developer onboarding audits, API/CLI/SDK experience review, documentation release, and model benchmarking.",
+      "category": "developer-experience",
+      "tags": ["dx", "docs", "onboarding", "api", "cli"],
+      "skillIds": [
+        "gstack-devex-review",
+        "gstack-plan-devex-review",
+        "gstack-document-release",
+        "gstack-benchmark-models",
+        "gstack-setup-gbrain",
+        "gstack-gstack-upgrade",
+        "gstack-codex"
+      ]
+    },
+    {
+      "id": "product-planning",
+      "name": "Product Planning",
+      "description": "Founder review, product planning, retrospectives, office hours, roadmap checks, and multi-review autoplan.",
+      "category": "product",
+      "tags": ["product", "planning", "strategy", "founder", "roadmap"],
+      "skillIds": [
+        "gstack-autoplan",
+        "gstack-plan-ceo-review",
+        "gstack-plan-eng-review",
+        "gstack-plan-design-review",
+        "gstack-plan-devex-review",
+        "gstack-office-hours",
+        "gstack-retro",
+        "gstack-landing-report",
+        "gstack-plan-tune",
+        "gstack-learn"
+      ]
+    },
+    {
+      "id": "browser-research",
+      "name": "Browser And Research",
+      "description": "Browser automation, web scraping, authenticated browser setup, remote browser pairing, and public identity research.",
+      "category": "research",
+      "tags": ["browser", "research", "scraping", "automation", "linkedin"],
+      "skillIds": [
+        "gstack-browse",
+        "gstack-gstack",
+        "gstack-open-gstack-browser",
+        "gstack-scrape",
+        "gstack-skillify",
+        "gstack-setup-browser-cookies",
+        "gstack-pair-agent",
+        "gstack-hackernews-frontpage",
+        "linkedin-identity-research"
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Operations",
+      "description": "Deployment, canary checks, release documentation, context handoff, retrospectives, and operational continuity.",
+      "category": "operations",
+      "tags": ["ops", "release", "deploy", "monitoring", "handoff"],
+      "skillIds": [
+        "gstack-ship",
+        "gstack-land-and-deploy",
+        "gstack-canary",
+        "gstack-setup-deploy",
+        "gstack-document-release",
+        "gstack-context-save",
+        "gstack-context-restore",
+        "gstack-retro",
+        "gstack-landing-report"
+      ]
+    }
+  ]
+}

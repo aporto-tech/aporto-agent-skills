@@ -35,6 +35,21 @@ run_capability("run code review", params)
 
 The agent sees a few Aporto tools, not thousands of skills.
 
+## Skill Packs
+
+Skills are grouped into curated packs by specialty, but packs are many-to-many.
+A skill can belong to `engineering`, `quality-assurance`, and `security` at the
+same time without duplicating the markdown file.
+
+Packs live in [`registry/packs.json`](registry/packs.json). Agents can list
+packs first, then pass a `packId` to discovery when they want a narrower search:
+
+```txt
+list_agent_skill_packs()
+discover_agent_skills("review this PR before merge", packId="engineering")
+load_agent_skill("gstack-review")
+```
+
 ## How It Works
 
 1. Skills live in this repository as `SKILL.md` files.
@@ -112,6 +127,7 @@ skills/
 schema/
   skill.schema.json
 registry/
+  packs.json
   skills.generated.json
 docs/
   update-policy.md

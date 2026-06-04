@@ -70,21 +70,41 @@ more than saving a small amount on infrequent searches.
 
 ## Full Product
 
-- reranker after vector search;
-- category and pack filters;
-- private team skills;
-- skill version pinning;
-- skill deprecation flow;
-- discovery analytics;
-- eval set for search quality;
-- GitHub import bot;
-- contributor validation bot;
-- safety review for imported instructions;
-- UI in `app.aporto` for browsing skills;
-- saved skill IDs per integration;
-- skill-to-capability binding;
-- monthly upstream release notes;
-- optional local fallback search for offline development.
+- reranker after embedding search;
+- skill packs/categories by specialty;
+- GitHub PR validation bot;
+- quality score for skills;
+- usage analytics: which skills are found and loaded;
+- private/team skills;
+- skill versioning and version pinning;
+- execution-aware skills with `required_capabilities`;
+- marketplace UI;
+- publisher/maintainer attribution;
+- evals for discover quality;
+- abuse/security policy for unsafe instructions.
+
+### Skill Packs / Categories
+
+Packs are curated views over the same skill catalog. They are not folders and
+they are not exclusive categories.
+
+One skill can belong to multiple packs. For example, a browser QA skill can
+belong to both `quality-assurance` and `browser-research`.
+
+Packs live in `registry/packs.json`:
+
+```json
+{
+  "id": "engineering",
+  "name": "Engineering",
+  "category": "software-engineering",
+  "skillIds": ["gstack-review", "gstack-investigate"]
+}
+```
+
+The backend sync imports packs into `AgentSkillPack` and memberships into
+`AgentSkillPackMember`. Discovery can then filter by `packId` while still using
+embedding search inside that specialty.
 
 ## Database
 
@@ -112,4 +132,3 @@ Reasons not to make it the core:
 - backend discovery and embeddings should remain server-side.
 
 The product should be API-first and MCP-compatible.
-
