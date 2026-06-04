@@ -7,7 +7,9 @@ small way to discover the right expert instruction at the moment it needs it,
 load only that instruction, and run real capabilities through Aporto when the
 task leaves the chat window.
 
-Aporto Agent Skills is the open-source skill registry for that workflow.
+Aporto Agent Skills is the open-source skill registry for that workflow. The
+current snapshot contains 47 skills: the adapted gstack catalog plus Aporto's
+first research skill.
 
 ## Why This Exists
 
@@ -71,6 +73,32 @@ GET  /api/skill-runs/:id
 ```
 
 `agent-skills` is the instruction layer. `routing/run` is the execution layer.
+
+## Add To Your Agent
+
+Direct API:
+
+```bash
+curl https://app.aporto.tech/api/agent-skills/discover \
+  -H "Authorization: Bearer $APORTO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"intent":"review this pull request before merge","limit":5}'
+```
+
+Hosted MCP:
+
+```json
+{
+  "mcpServers": {
+    "aporto": {
+      "url": "https://app.aporto.tech/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${APORTO_API_KEY}"
+      }
+    }
+  }
+}
+```
 
 ## Repository Shape
 
@@ -146,4 +174,3 @@ See [docs/update-policy.md](docs/update-policy.md).
 
 This repository is intended to be open source. Each imported skill should include
 source attribution when it is adapted from another project.
-
