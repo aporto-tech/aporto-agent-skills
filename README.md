@@ -50,6 +50,24 @@ discover_agent_skills("review this PR before merge", packId="engineering")
 load_agent_skill("gstack-review")
 ```
 
+## Concepts And Sources
+
+A skill concept is the shared job-to-be-done, such as `design-review` or
+`ceo-review`. A source is the concrete instruction variant for that concept, such
+as `gstack / Garry Tan` or `aporto`.
+
+Use `source`, not `provider`, for markdown skills. `provider` is reserved for
+executable capabilities such as model, API, or tool providers.
+
+Agents can discover concepts first, list available sources when the user wants a
+specific author or methodology, and load one source variant:
+
+```txt
+discover_agent_skills("audit my landing page design")
+list_agent_skill_sources("design-review")
+load_agent_skill("gstack-design-review")
+```
+
 ## How It Works
 
 1. Skills live in this repository as `SKILL.md` files.
@@ -145,6 +163,9 @@ Every skill is a markdown file with frontmatter metadata used for indexing:
 id: gstack-pr-review
 name: PR Review
 description: Review a code diff for bugs, regressions, trust boundary issues, and missing tests.
+concept:
+  id: pr-review
+  name: PR Review
 tags: [engineering, review, code-quality]
 when_to_use:
   - Review a branch before merge
@@ -154,7 +175,10 @@ required_capabilities:
   - diff_analysis
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
 ---
 
