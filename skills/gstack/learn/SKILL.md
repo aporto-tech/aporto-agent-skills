@@ -2,6 +2,9 @@
 id: gstack-learn
 name: Learn
 description: Manage project learnings. Review, search, prune, and export what gstack has learned across sessions. Use when asked to \"what have we learned\", \"show learnings\", \"prune stale learnings\", or \"export learnings\". Proactively suggest when the user asks about past patterns or wonders \"didn't we fix this before?\"
+concept:
+  id: undefinedlearn
+  name: Learn
 tags: [gstack, engineering]
 when_to_use:
   - what have we learned
@@ -13,8 +16,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: learn/SKILL.md
+  priority: 100
   path: learn/SKILL.md
 ---
 

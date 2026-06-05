@@ -2,6 +2,9 @@
 id: gstack-gstack
 name: Gstack
 description: Fast headless browser for QA testing and site dogfooding. Navigate pages, interact with elements, verify state, diff before/after, take annotated screenshots, test responsive layouts, forms, uploads, dialogs, and capture bug evidence. Use when asked to open or test a site, verify a deployment, dogfood a user flow, or file a bug with screenshots. (gstack)
+concept:
+  id: undefinedgstack
+  name: Gstack
 tags: [gstack, qa, engineering, operations, agent-tooling]
 when_to_use:
   - Use the Gstack workflow from gstack
@@ -11,8 +14,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: SKILL.md
+  priority: 100
   path: SKILL.md
 ---
 

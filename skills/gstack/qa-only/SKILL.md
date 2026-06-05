@@ -2,6 +2,9 @@
 id: gstack-qa-only
 name: Qa Only
 description: Report-only QA testing. Systematically tests a web application and produces a structured report with health score, screenshots, and repro steps — but never fixes anything. Use when asked to \"just report bugs\", \"qa report only\", or \"test but don't fix\". For the full test-fix-verify loop, use /qa instead. Proactively suggest when the user wants a bug report without any code changes. (gstack) Voice triggers (speech-to-text aliases): \"bug report\", \"just check for bugs\".
+concept:
+  id: undefinedqa-only
+  name: Qa Only
 tags: [gstack, qa, engineering]
 when_to_use:
   - just report bugs
@@ -14,8 +17,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: qa-only/SKILL.md
+  priority: 100
   path: qa-only/SKILL.md
 ---
 

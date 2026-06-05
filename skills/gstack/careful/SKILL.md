@@ -2,6 +2,9 @@
 id: gstack-careful
 name: Careful
 description: Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE, force-push, git reset --hard, kubectl delete, and similar destructive operations. User can override each warning. Use when touching prod, debugging live systems, or working in a shared environment. Use when asked to \"be careful\", \"safety mode\", \"prod mode\", or \"careful mode\". (gstack)
+concept:
+  id: undefinedcareful
+  name: Careful
 tags: [gstack, engineering]
 when_to_use:
   - be careful
@@ -12,8 +15,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: careful/SKILL.md
+  priority: 100
   path: careful/SKILL.md
 ---
 

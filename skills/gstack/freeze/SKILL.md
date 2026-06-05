@@ -2,6 +2,9 @@
 id: gstack-freeze
 name: Freeze
 description: Restrict file edits to a specific directory for the session. Blocks Edit and Write outside the allowed path. Use when debugging to prevent accidentally \"fixing\" unrelated code, or when you want to scope changes to one module. Use when asked to \"freeze\", \"restrict edits\", \"only edit this folder\", or \"lock down edits\". (gstack)
+concept:
+  id: undefinedfreeze
+  name: Freeze
 tags: [gstack, engineering]
 when_to_use:
   - fixing
@@ -13,8 +16,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: freeze/SKILL.md
+  priority: 100
   path: freeze/SKILL.md
 ---
 

@@ -2,6 +2,9 @@
 id: gstack-canary
 name: Canary
 description: Post-deploy canary monitoring. Watches the live app for console errors, performance regressions, and page failures using the browse daemon. Takes periodic screenshots, compares against pre-deploy baselines, and alerts on anomalies. Use when: \"monitor deploy\", \"canary\", \"post-deploy check\", \"watch production\", \"verify deploy\". (gstack)
+concept:
+  id: undefinedcanary
+  name: Canary
 tags: [gstack, qa, performance, product, operations]
 when_to_use:
   - monitor deploy
@@ -14,8 +17,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: canary/SKILL.md
+  priority: 100
   path: canary/SKILL.md
 ---
 

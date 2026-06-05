@@ -2,6 +2,9 @@
 id: gstack-document-release
 name: Document Release
 description: Post-ship documentation update. Reads all project docs, cross-references the diff, updates README/ARCHITECTURE/CONTRIBUTING/CLAUDE.md to match what shipped, polishes CHANGELOG voice, cleans up TODOS, and optionally bumps VERSION. Use when asked to \"update the docs\", \"sync documentation\", or \"post-ship docs\". Proactively suggest after a PR is merged or code is shipped. (gstack)
+concept:
+  id: undefineddocument-release
+  name: Document Release
 tags: [gstack, engineering, documentation, operations, agent-tooling]
 when_to_use:
   - update the docs
@@ -12,8 +15,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: document-release/SKILL.md
+  priority: 100
   path: document-release/SKILL.md
 ---
 

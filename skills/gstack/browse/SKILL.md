@@ -2,6 +2,9 @@
 id: gstack-browse
 name: Browse
 description: Fast headless browser for QA testing and site dogfooding. Navigate any URL, interact with elements, verify page state, diff before/after actions, take annotated screenshots, check responsive layouts, test forms and uploads, handle dialogs, and assert element states. ~100ms per command. Use when you need to test a feature, verify a deployment, dogfood a user flow, or file a bug with evidence. Use when asked to \"open in browser\", \"test the site\", \"take a screenshot\", or \"dogfood this\". (gstack)
+concept:
+  id: undefinedbrowse
+  name: Browse
 tags: [gstack, qa, engineering, operations, agent-tooling]
 when_to_use:
   - open in browser
@@ -14,8 +17,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: browse/SKILL.md
+  priority: 100
   path: browse/SKILL.md
 ---
 

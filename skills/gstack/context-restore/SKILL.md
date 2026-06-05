@@ -2,6 +2,9 @@
 id: gstack-context-restore
 name: Context Restore
 description: Restore working context saved earlier by /context-save. Loads the most recent saved state (across all branches by default) so you can pick up where you left off — even across Conductor workspace handoffs. Use when asked to \"resume\", \"restore context\", \"where was I\", or \"pick up where I left off\". Pair with /context-save. Formerly /checkpoint resume — renamed because Claude Code treats /checkpoint as a native rewind alias in current environments. (gstack)
+concept:
+  id: undefinedcontext-restore
+  name: Context Restore
 tags: [gstack, engineering, agent-tooling]
 when_to_use:
   - resume
@@ -12,8 +15,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: context-restore/SKILL.md
+  priority: 100
   path: context-restore/SKILL.md
 ---
 

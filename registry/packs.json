@@ -7,7 +7,13 @@
       "name": "Engineering",
       "description": "Code review, debugging, architecture, shipping, quality, deployment, and engineering workflow skills.",
       "category": "software-engineering",
-      "tags": ["engineering", "code", "review", "debugging", "deployment"],
+      "tags": [
+        "engineering",
+        "code",
+        "review",
+        "debugging",
+        "deployment"
+      ],
       "skillIds": [
         "gstack-review",
         "gstack-investigate",
@@ -31,7 +37,13 @@
       "name": "Design",
       "description": "Product design, visual QA, design systems, design exploration, and production HTML implementation.",
       "category": "design",
-      "tags": ["design", "ui", "ux", "visual-qa", "frontend"],
+      "tags": [
+        "design",
+        "ui",
+        "ux",
+        "visual-qa",
+        "frontend"
+      ],
       "skillIds": [
         "gstack-design-consultation",
         "gstack-design-shotgun",
@@ -47,7 +59,13 @@
       "name": "Quality Assurance",
       "description": "Web QA, bug reports, browser testing, performance checks, canary monitoring, and regression detection.",
       "category": "quality",
-      "tags": ["qa", "testing", "browser", "performance", "monitoring"],
+      "tags": [
+        "qa",
+        "testing",
+        "browser",
+        "performance",
+        "monitoring"
+      ],
       "skillIds": [
         "gstack-qa",
         "gstack-qa-only",
@@ -63,7 +81,13 @@
       "name": "Security",
       "description": "Security audit, safety guardrails, production-risk review, and destructive-command protection.",
       "category": "security",
-      "tags": ["security", "audit", "safety", "risk", "production"],
+      "tags": [
+        "security",
+        "audit",
+        "safety",
+        "risk",
+        "production"
+      ],
       "skillIds": [
         "gstack-cso",
         "gstack-careful",
@@ -77,7 +101,13 @@
       "name": "Developer Experience",
       "description": "Developer onboarding audits, API/CLI/SDK experience review, documentation release, and model benchmarking.",
       "category": "developer-experience",
-      "tags": ["dx", "docs", "onboarding", "api", "cli"],
+      "tags": [
+        "dx",
+        "docs",
+        "onboarding",
+        "api",
+        "cli"
+      ],
       "skillIds": [
         "gstack-devex-review",
         "gstack-plan-devex-review",
@@ -93,7 +123,13 @@
       "name": "Product Planning",
       "description": "Founder review, product planning, retrospectives, office hours, roadmap checks, and multi-review autoplan.",
       "category": "product",
-      "tags": ["product", "planning", "strategy", "founder", "roadmap"],
+      "tags": [
+        "product",
+        "planning",
+        "strategy",
+        "founder",
+        "roadmap"
+      ],
       "skillIds": [
         "gstack-autoplan",
         "gstack-plan-ceo-review",
@@ -112,7 +148,13 @@
       "name": "Browser And Research",
       "description": "Browser automation, web scraping, authenticated browser setup, remote browser pairing, and public identity research.",
       "category": "research",
-      "tags": ["browser", "research", "scraping", "automation", "linkedin"],
+      "tags": [
+        "browser",
+        "research",
+        "scraping",
+        "automation",
+        "linkedin"
+      ],
       "skillIds": [
         "gstack-browse",
         "gstack-gstack",
@@ -130,7 +172,13 @@
       "name": "Operations",
       "description": "Deployment, canary checks, release documentation, context handoff, retrospectives, and operational continuity.",
       "category": "operations",
-      "tags": ["ops", "release", "deploy", "monitoring", "handoff"],
+      "tags": [
+        "ops",
+        "release",
+        "deploy",
+        "monitoring",
+        "handoff"
+      ],
       "skillIds": [
         "gstack-ship",
         "gstack-land-and-deploy",
@@ -141,6 +189,66 @@
         "gstack-context-restore",
         "gstack-retro",
         "gstack-landing-report"
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "description": "Marketing strategy, growth planning, SEO, lifecycle, ads, analytics, sales enablement, content, and launch workflows.",
+      "category": "marketing",
+      "tags": [
+        "marketing",
+        "growth",
+        "seo",
+        "ads",
+        "lifecycle",
+        "analytics",
+        "sales"
+      ],
+      "skillIds": [
+        "marketingskills-ab-testing",
+        "marketingskills-ad-creative",
+        "marketingskills-ads",
+        "marketingskills-ai-seo",
+        "marketingskills-analytics",
+        "marketingskills-aso",
+        "marketingskills-churn-prevention",
+        "marketingskills-co-marketing",
+        "marketingskills-cold-email",
+        "marketingskills-community-marketing",
+        "marketingskills-competitor-profiling",
+        "marketingskills-competitors",
+        "marketingskills-content-strategy",
+        "marketingskills-copy-editing",
+        "marketingskills-copywriting",
+        "marketingskills-cro",
+        "marketingskills-customer-research",
+        "marketingskills-directory-submissions",
+        "marketingskills-emails",
+        "marketingskills-free-tools",
+        "marketingskills-image",
+        "marketingskills-launch",
+        "marketingskills-lead-magnets",
+        "marketingskills-marketing-ideas",
+        "marketingskills-marketing-plan",
+        "marketingskills-marketing-psychology",
+        "marketingskills-onboarding",
+        "marketingskills-paywalls",
+        "marketingskills-popups",
+        "marketingskills-pricing",
+        "marketingskills-product-marketing",
+        "marketingskills-programmatic-seo",
+        "marketingskills-prospecting",
+        "marketingskills-referrals",
+        "marketingskills-revops",
+        "marketingskills-sales-enablement",
+        "marketingskills-schema",
+        "marketingskills-seo-audit",
+        "marketingskills-signup",
+        "marketingskills-site-architecture",
+        "marketingskills-sms",
+        "marketingskills-social",
+        "marketingskills-video"
       ]
     }
   ]

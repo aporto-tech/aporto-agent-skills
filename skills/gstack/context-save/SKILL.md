@@ -2,6 +2,9 @@
 id: gstack-context-save
 name: Context Save
 description: Save working context. Captures git state, decisions made, and remaining work so any future session can pick up without losing a beat. Use when asked to \"save progress\", \"save state\", \"context save\", or \"save my work\". Pair with /context-restore to resume later. Formerly /checkpoint — renamed because Claude Code treats /checkpoint as a native rewind alias in current environments, which was shadowing this skill. (gstack)
+concept:
+  id: undefinedcontext-save
+  name: Context Save
 tags: [gstack, engineering, agent-tooling]
 when_to_use:
   - save progress
@@ -12,8 +15,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: context-save/SKILL.md
+  priority: 100
   path: context-save/SKILL.md
 ---
 

@@ -2,6 +2,9 @@
 id: gstack-unfreeze
 name: Unfreeze
 description: Clear the freeze boundary set by /freeze, allowing edits to all directories again. Use when you want to widen edit scope without ending the session. Use when asked to \"unfreeze\", \"unlock edits\", \"remove freeze\", or \"allow all edits\". (gstack)
+concept:
+  id: undefinedunfreeze
+  name: Unfreeze
 tags: [gstack]
 when_to_use:
   - unfreeze
@@ -12,8 +15,13 @@ required_capabilities:
   []
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: unfreeze/SKILL.md
+  priority: 100
   path: unfreeze/SKILL.md
 ---
 

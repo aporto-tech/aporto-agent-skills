@@ -2,6 +2,9 @@
 id: gstack-plan-eng-review
 name: Plan Eng Review
 description: Eng manager-mode plan review. Lock in the execution plan — architecture, data flow, diagrams, edge cases, test coverage, performance. Walks through issues interactively with opinionated recommendations. Use when asked to \"review the architecture\", \"engineering review\", or \"lock in the plan\". Proactively suggest when the user has a plan or design doc and is about to start coding — to catch architecture issues before implementation. (gstack) Voice triggers (speech-to-text aliases): \"tech review\", 
+concept:
+  id: undefinedplan-eng-review
+  name: Plan Eng Review
 tags: [gstack, qa, design, engineering, performance]
 when_to_use:
   - review the architecture
@@ -13,8 +16,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: plan-eng-review/SKILL.md
+  priority: 100
   path: plan-eng-review/SKILL.md
 ---
 

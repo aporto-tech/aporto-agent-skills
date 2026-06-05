@@ -2,6 +2,9 @@
 id: gstack-devex-review
 name: Devex Review
 description: Live developer experience audit. Uses the browse tool to actually TEST the developer experience: navigates docs, tries the getting started flow, times TTHW, screenshots error messages, evaluates CLI help text. Produces a DX scorecard with evidence. Compares against /plan-devex-review scores if they exist (the boomerang: plan said 3 minutes, reality says 8). Use when asked to \"test the DX\", \"DX audit\", \"developer experience test\", or \"try the onboarding\". Proactively suggest after shipping a deve
+concept:
+  id: undefineddevex-review
+  name: Devex Review
 tags: [gstack, qa, engineering, documentation, operations]
 when_to_use:
   - test the DX
@@ -14,8 +17,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: devex-review/SKILL.md
+  priority: 100
   path: devex-review/SKILL.md
 ---
 

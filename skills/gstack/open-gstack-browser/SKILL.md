@@ -2,6 +2,9 @@
 id: gstack-open-gstack-browser
 name: Open Gstack Browser
 description: Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in. Opens a visible browser window where you can watch every action in real time. The sidebar shows a live activity feed and chat. Anti-bot stealth built in. Use when asked to \"open gstack browser\", \"launch browser\", \"connect chrome\", \"open chrome\", \"real browser\", \"launch chrome\", \"side panel\", or \"control my browser\". Voice triggers (speech-to-text aliases): \"show me the browser\".
+concept:
+  id: undefinedopen-gstack-browser
+  name: Open Gstack Browser
 tags: [gstack, qa, design, agent-tooling]
 when_to_use:
   - open gstack browser
@@ -13,8 +16,13 @@ required_capabilities:
   - browser_automation
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: open-gstack-browser/SKILL.md
+  priority: 100
   path: open-gstack-browser/SKILL.md
 ---
 

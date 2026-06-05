@@ -2,6 +2,9 @@
 id: gstack-retro
 name: Retro
 description: Weekly engineering retrospective. Analyzes commit history, work patterns, and code quality metrics with persistent history and trend tracking. Team-aware: breaks down per-person contributions with praise and growth areas. Use when asked to \"weekly retro\", \"what did we ship\", or \"engineering retrospective\". Proactively suggest at the end of a work week or sprint. (gstack)
+concept:
+  id: undefinedretro
+  name: Retro
 tags: [gstack, engineering, operations]
 when_to_use:
   - weekly retro
@@ -12,8 +15,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: retro/SKILL.md
+  priority: 100
   path: retro/SKILL.md
 ---
 

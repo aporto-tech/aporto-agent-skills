@@ -2,6 +2,9 @@
 id: linkedin-identity-research
 name: LinkedIn Identity Research
 description: Find or verify professional identity from email, name, company, role, or public web signals.
+concept:
+  id: linkedin-identity-research
+  name: LinkedIn Identity Research
 tags: [linkedin, research, identity, enrichment, sourcing]
 when_to_use:
   - Find a likely LinkedIn profile from an email address
@@ -11,6 +14,14 @@ required_capabilities:
   - web_search
   - linkedin_lookup
 context_cost: medium
+source:
+  slug: aporto
+  name: aporto
+  display_name: Aporto
+  author: Aporto
+  url: https://github.com/aporto-tech/aporto-agent-skills
+  path: skills/research/linkedin-identity-research/SKILL.md
+  priority: 100
 ---
 
 # LinkedIn Identity Research
@@ -30,4 +41,3 @@ without loading a large sourcing playbook into context.
 
 Return a compact JSON object with likely profile URL, confidence, evidence, and
 open questions.
-

@@ -2,6 +2,9 @@
 id: gstack-land-and-deploy
 name: Land And Deploy
 description: Land and deploy workflow. Merges the PR, waits for CI and deploy, verifies production health via canary checks. Takes over after /ship creates the PR. Use when: \"merge\", \"land\", \"deploy\", \"merge and verify\", \"land it\", \"ship it to production\". (gstack)
+concept:
+  id: undefinedland-and-deploy
+  name: Land And Deploy
 tags: [gstack, qa, engineering, product, operations]
 when_to_use:
   - merge
@@ -15,8 +18,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: land-and-deploy/SKILL.md
+  priority: 100
   path: land-and-deploy/SKILL.md
 ---
 

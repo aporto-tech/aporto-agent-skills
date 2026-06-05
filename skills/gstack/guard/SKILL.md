@@ -2,6 +2,9 @@
 id: gstack-guard
 name: Guard
 description: Full safety mode: destructive command warnings + directory-scoped edits. Combines /careful (warns before rm -rf, DROP TABLE, force-push, etc.) with /freeze (blocks edits outside a specified directory). Use for maximum safety when touching prod or debugging live systems. Use when asked to \"guard mode\", \"full safety\", \"lock it down\", or \"maximum safety\". (gstack)
+concept:
+  id: undefinedguard
+  name: Guard
 tags: [gstack, engineering]
 when_to_use:
   - guard mode
@@ -12,8 +15,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: guard/SKILL.md
+  priority: 100
   path: guard/SKILL.md
 ---
 

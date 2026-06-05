@@ -2,6 +2,9 @@
 id: gstack-review
 name: Review
 description: Pre-landing PR review. Analyzes diff against the base branch for SQL safety, LLM trust boundary violations, conditional side effects, and other structural issues. Use when asked to \"review this PR\", \"code review\", \"pre-landing review\", or \"check my diff\". Proactively suggest when the user is about to merge or land code changes. (gstack)
+concept:
+  id: undefinedreview
+  name: Review
 tags: [gstack, engineering, operations]
 when_to_use:
   - review this PR
@@ -13,8 +16,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: review/SKILL.md
+  priority: 100
   path: review/SKILL.md
 ---
 

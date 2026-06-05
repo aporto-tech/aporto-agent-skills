@@ -2,6 +2,9 @@
 id: gstack-plan-ceo-review
 name: Plan Ceo Review
 description: CEO/founder-mode plan review. Rethink the problem, find the 10-star product, challenge premises, expand scope when it creates a better product. Four modes: SCOPE EXPANSION (dream big), SELECTIVE EXPANSION (hold scope + cherry-pick expansions), HOLD SCOPE (maximum rigor), SCOPE REDUCTION (strip to essentials). Use when asked to \"think bigger\", \"expand scope\", \"strategy review\", \"rethink this\", or \"is this ambitious enough\". Proactively suggest when the user is questioning scope or ambition of a p
+concept:
+  id: undefinedplan-ceo-review
+  name: Plan Ceo Review
 tags: [gstack, engineering, product]
 when_to_use:
   - think bigger
@@ -13,8 +16,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: plan-ceo-review/SKILL.md
+  priority: 100
   path: plan-ceo-review/SKILL.md
 ---
 

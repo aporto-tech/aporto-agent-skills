@@ -2,6 +2,9 @@
 id: gstack-landing-report
 name: Landing Report
 description: Read-only queue dashboard for workspace-aware ship. Shows which VERSION slots are currently claimed by open PRs, which sibling Conductor workspaces have WIP work likely to ship soon, and what slot /ship would pick next. No mutations — just a snapshot. Use when asked to \"landing report\", \"what's in the queue\", \"show me open PRs\", or \"which version do I claim next\". (gstack)
+concept:
+  id: undefinedlanding-report
+  name: Landing Report
 tags: [gstack, engineering, operations]
 when_to_use:
   - landing report
@@ -13,8 +16,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: landing-report/SKILL.md
+  priority: 100
   path: landing-report/SKILL.md
 ---
 

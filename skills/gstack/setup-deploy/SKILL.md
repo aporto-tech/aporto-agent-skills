@@ -2,6 +2,9 @@
 id: gstack-setup-deploy
 name: Setup Deploy
 description: Configure deployment settings for /land-and-deploy. Detects your deploy platform (Fly.io, Render, Vercel, Netlify, Heroku, GitHub Actions, custom), production URL, health check endpoints, and deploy status commands. Writes the configuration to CLAUDE.md so all future deploys are automatic. Use when: \"setup deploy\", \"configure deployment\", \"set up land-and-deploy\", \"how do I deploy with gstack\", \"add deploy config\".
+concept:
+  id: undefinedsetup-deploy
+  name: Setup Deploy
 tags: [gstack, product, operations, agent-tooling]
 when_to_use:
   - setup deploy
@@ -13,8 +16,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: setup-deploy/SKILL.md
+  priority: 100
   path: setup-deploy/SKILL.md
 ---
 

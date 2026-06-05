@@ -2,6 +2,9 @@
 id: gstack-autoplan
 name: Autoplan
 description: Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. Surfaces taste decisions (close approaches, borderline scope, codex disagreements) at a final approval gate. One command, fully reviewed plan out. Use when asked to \"auto review\", \"autoplan\", \"run all reviews\", \"review this plan automatically\", or \"make the decisions for me\". Proactively suggest when the user has a plan file and wants 
+concept:
+  id: undefinedautoplan
+  name: Autoplan
 tags: [gstack, design, engineering, product, agent-tooling]
 when_to_use:
   - auto review
@@ -14,8 +17,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: autoplan/SKILL.md
+  priority: 100
   path: autoplan/SKILL.md
 ---
 

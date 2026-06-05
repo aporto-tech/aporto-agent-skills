@@ -2,6 +2,9 @@
 id: gstack-pair-agent
 name: Pair Agent
 description: Pair a remote AI agent with your browser. One command generates a setup key and prints instructions the other agent can follow to connect. Works with OpenClaw, Hermes, Codex, Cursor, or any agent that can make HTTP requests. The remote agent gets its own tab with scoped access (read+write by default, admin on request). Use when asked to \"pair agent\", \"connect agent\", \"share browser\", \"remote browser\", \"let another agent use my browser\", or \"give browser access\". (gstack) Voice triggers (speech-t
+concept:
+  id: undefinedpair-agent
+  name: Pair Agent
 tags: [gstack, qa, engineering, agent-tooling]
 when_to_use:
   - pair agent
@@ -14,8 +17,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: pair-agent/SKILL.md
+  priority: 100
   path: pair-agent/SKILL.md
 ---
 

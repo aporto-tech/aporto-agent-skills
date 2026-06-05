@@ -2,6 +2,9 @@
 id: gstack-plan-design-review
 name: Plan Design Review
 description: Designer's eye plan review — interactive, like CEO and Eng review. Rates each design dimension 0-10, explains what would make it a 10, then fixes the plan to get there. Works in plan mode. For live site visual audits, use /design-review. Use when asked to \"review the design plan\" or \"design critique\". Proactively suggest when the user has a plan with UI/UX components that should be reviewed before implementation. (gstack)
+concept:
+  id: undefinedplan-design-review
+  name: Plan Design Review
 tags: [gstack, design, engineering, product]
 when_to_use:
   - review the design plan
@@ -11,8 +14,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: plan-design-review/SKILL.md
+  priority: 100
   path: plan-design-review/SKILL.md
 ---
 

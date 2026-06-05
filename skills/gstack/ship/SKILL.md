@@ -2,6 +2,9 @@
 id: gstack-ship
 name: Ship
 description: Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. Use when asked to \"ship\", \"deploy\", \"push to main\", \"create a PR\", \"merge and push\", or \"get it deployed\". Proactively invoke this skill (do NOT push/PR directly) when the user says code is ready, asks about deploying, wants to push code up, or asks to create a PR. (gstack)
+concept:
+  id: undefinedship
+  name: Ship
 tags: [gstack, qa, engineering, documentation, operations]
 when_to_use:
   - ship
@@ -15,8 +18,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: ship/SKILL.md
+  priority: 100
   path: ship/SKILL.md
 ---
 

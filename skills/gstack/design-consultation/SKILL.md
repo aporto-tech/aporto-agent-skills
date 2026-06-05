@@ -2,6 +2,9 @@
 id: gstack-design-consultation
 name: Design Consultation
 description: Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview pages. Creates DESIGN.md as your project's design source of truth. For existing sites, use /plan-design-review to infer the system instead. Use when asked to \"design system\", \"brand guidelines\", or \"create DESIGN.md\". Proactively suggest when starting a new project's UI with no existing design system o
+concept:
+  id: undefineddesign-consultation
+  name: Design Consultation
 tags: [gstack, design, engineering, product, operations]
 when_to_use:
   - design system
@@ -13,8 +16,13 @@ required_capabilities:
   - deployment_inspection
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: design-consultation/SKILL.md
+  priority: 100
   path: design-consultation/SKILL.md
 ---
 

@@ -2,6 +2,9 @@
 id: gstack-gstack-upgrade
 name: Gstack Upgrade
 description: Upgrade gstack to the latest version. Detects global vs vendored install, runs the upgrade, and shows what's new. Use when asked to \"upgrade gstack\", \"update gstack\", or \"get latest version\". Voice triggers (speech-to-text aliases): \"upgrade the tools\", \"update the tools\", \"gee stack upgrade\", \"g stack upgrade\".
+concept:
+  id: undefinedgstack-upgrade
+  name: Gstack Upgrade
 tags: [gstack, qa]
 when_to_use:
   - upgrade gstack
@@ -13,8 +16,13 @@ required_capabilities:
   - browser_automation
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: gstack-upgrade/SKILL.md
+  priority: 100
   path: gstack-upgrade/SKILL.md
 ---
 

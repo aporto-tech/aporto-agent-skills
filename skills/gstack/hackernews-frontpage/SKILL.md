@@ -2,6 +2,9 @@
 id: gstack-hackernews-frontpage
 name: Hackernews Frontpage
 description: Scrape the Hacker News front page (titles, points, comment counts).
+concept:
+  id: undefinedhackernews-frontpage
+  name: Hackernews Frontpage
 tags: [gstack, agent-tooling]
 when_to_use:
   - Use the Hackernews Frontpage workflow from gstack
@@ -9,8 +12,13 @@ required_capabilities:
   []
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: browser-skills/hackernews-frontpage/SKILL.md
+  priority: 100
   path: browser-skills/hackernews-frontpage/SKILL.md
 ---
 

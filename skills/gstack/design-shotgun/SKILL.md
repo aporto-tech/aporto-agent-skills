@@ -2,6 +2,9 @@
 id: gstack-design-shotgun
 name: Design Shotgun
 description: Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. Standalone design exploration you can run anytime. Use when: \"explore designs\", \"show me options\", \"design variants\", \"visual brainstorm\", or \"I don't like how this looks\". Proactively suggest when the user describes a UI feature but hasn't seen what it could look like. (gstack)
+concept:
+  id: undefineddesign-shotgun
+  name: Design Shotgun
 tags: [gstack, design]
 when_to_use:
   - explore designs
@@ -13,8 +16,13 @@ required_capabilities:
   - browser_automation
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: design-shotgun/SKILL.md
+  priority: 100
   path: design-shotgun/SKILL.md
 ---
 

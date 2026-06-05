@@ -2,6 +2,9 @@
 id: gstack-skillify
 name: Skillify
 description: Codify the most recent successful /scrape flow into a permanent browser-skill on disk. Future /scrape calls with the same intent run the codified script in ~200ms instead of re-driving the page. Walks back through the conversation, synthesizes script.ts + script.test.ts + fixture, runs the test in a temp dir, and asks before committing. Use when asked to \"skillify\", \"codify\", \"save this scrape\", or \"make this permanent\". (gstack)
+concept:
+  id: undefinedskillify
+  name: Skillify
 tags: [gstack, qa, agent-tooling]
 when_to_use:
   - skillify
@@ -12,8 +15,13 @@ required_capabilities:
   - browser_automation
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: skillify/SKILL.md
+  priority: 100
   path: skillify/SKILL.md
 ---
 

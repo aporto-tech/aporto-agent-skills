@@ -8,8 +8,8 @@ load only that instruction, and run real capabilities through Aporto when the
 task leaves the chat window.
 
 Aporto Agent Skills is the open-source skill registry for that workflow. The
-current snapshot contains 47 skills: the adapted gstack catalog plus Aporto's
-first research skill.
+current snapshot contains 90 skills: the adapted gstack catalog, the Marketing
+Skills catalog, and Aporto's first research skill.
 
 ## Why This Exists
 
@@ -186,6 +186,9 @@ source:
 
 Use this skill when...
 ```
+
+For the full authoring/import rules, including duplicate concepts and source
+attribution, see [docs/skill-authoring.md](docs/skill-authoring.md).
 
 ## Who This Is For
 

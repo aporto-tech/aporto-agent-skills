@@ -2,6 +2,9 @@
 id: gstack-investigate
 name: Investigate
 description: Systematic debugging with root cause investigation. Four phases: investigate, analyze, hypothesize, implement. Iron Law: no fixes without root cause. Use when asked to \"debug this\", \"fix this bug\", \"why is this broken\", \"investigate this error\", or \"root cause analysis\". Proactively invoke this skill (do NOT debug directly) when the user reports errors, 500 errors, stack traces, unexpected behavior, \"it was working yesterday\", or is troubleshooting why something stopped working. (gstack)
+concept:
+  id: undefinedinvestigate
+  name: Investigate
 tags: [gstack, engineering]
 when_to_use:
   - debug this
@@ -13,8 +16,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: investigate/SKILL.md
+  priority: 100
   path: investigate/SKILL.md
 ---
 

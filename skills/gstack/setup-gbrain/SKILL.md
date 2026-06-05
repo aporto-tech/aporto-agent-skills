@@ -2,6 +2,9 @@
 id: gstack-setup-gbrain
 name: Setup Gbrain
 description: Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. One command from zero to \"gbrain is running, and this agent can call it.\" Use when: \"setup gbrain\", \"connect gbrain\", \"start gbrain\", \"install gbrain\", \"configure gbrain for this machine\". (gstack)
+concept:
+  id: undefinedsetup-gbrain
+  name: Setup Gbrain
 tags: [gstack, agent-tooling]
 when_to_use:
   - gbrain is running, and this agent can call it.
@@ -13,8 +16,13 @@ required_capabilities:
   []
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: setup-gbrain/SKILL.md
+  priority: 100
   path: setup-gbrain/SKILL.md
 ---
 

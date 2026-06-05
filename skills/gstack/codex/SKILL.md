@@ -2,6 +2,9 @@
 id: gstack-codex
 name: Codex
 description: OpenAI Codex CLI wrapper — three modes. Code review: independent diff review via codex review with pass/fail gate. Challenge: adversarial mode that tries to break your code. Consult: ask codex anything with session continuity for follow-ups. The \"200 IQ autistic developer\" second opinion. Use when asked to \"codex review\", \"codex challenge\", \"ask codex\", \"second opinion\", or \"consult codex\". (gstack) Voice triggers (speech-to-text aliases): \"code x\", \"code ex\", \"get another opinion\".
+concept:
+  id: undefinedcodex
+  name: Codex
 tags: [gstack, design, engineering, agent-tooling]
 when_to_use:
   - 200 IQ autistic developer
@@ -14,8 +17,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: codex/SKILL.md
+  priority: 100
   path: codex/SKILL.md
 ---
 

@@ -2,6 +2,9 @@
 id: gstack-setup-browser-cookies
 name: Setup Browser Cookies
 description: Import cookies from your real Chromium browser into the headless browse session. Opens an interactive picker UI where you select which cookie domains to import. Use before QA testing authenticated pages. Use when asked to \"import cookies\", \"login to the site\", or \"authenticate the browser\". (gstack)
+concept:
+  id: undefinedsetup-browser-cookies
+  name: Setup Browser Cookies
 tags: [gstack, qa, design, agent-tooling]
 when_to_use:
   - import cookies
@@ -11,8 +14,13 @@ required_capabilities:
   - browser_automation
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: setup-browser-cookies/SKILL.md
+  priority: 100
   path: setup-browser-cookies/SKILL.md
 ---
 

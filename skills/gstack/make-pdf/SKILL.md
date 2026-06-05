@@ -2,6 +2,9 @@
 id: gstack-make-pdf
 name: Make Pdf
 description: Turn any markdown file into a publication-quality PDF. Proper 1in margins, intelligent page breaks, page numbers, cover pages, running headers, curly quotes and em dashes, clickable TOC, diagonal DRAFT watermark. Not a draft artifact — a finished artifact. Use when asked to \"make a PDF\", \"export to PDF\", \"turn this markdown into a PDF\", or \"generate a document\". (gstack) Voice triggers (speech-to-text aliases): \"make this a pdf\", \"make it a pdf\", \"export to pdf\", \"turn this into a pdf\", \"turn th
+concept:
+  id: undefinedmake-pdf
+  name: Make Pdf
 tags: [gstack, documentation]
 when_to_use:
   - make a PDF
@@ -13,8 +16,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: make-pdf/SKILL.md
+  priority: 100
   path: make-pdf/SKILL.md
 ---
 

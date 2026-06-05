@@ -2,6 +2,9 @@
 id: gstack-design-html
 name: Design Html
 description: Design finalization: generates production-quality Pretext-native HTML/CSS. Works with approved mockups from /design-shotgun, CEO plans from /plan-ceo-review, design review context from /plan-design-review, or from scratch with a user description. Text actually reflows, heights are computed, layouts are dynamic. 30KB overhead, zero deps. Smart API routing: picks the right Pretext patterns for each design type. Use when: \"finalize this design\", \"turn this into HTML\", \"build me a page\", \"implement 
+concept:
+  id: undefineddesign-html
+  name: Design Html
 tags: [gstack, design, engineering, product]
 when_to_use:
   - finalize this design
@@ -12,8 +15,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: design-html/SKILL.md
+  priority: 100
   path: design-html/SKILL.md
 ---
 

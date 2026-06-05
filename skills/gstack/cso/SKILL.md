@@ -2,6 +2,9 @@
 id: gstack-cso
 name: Cso
 description: Chief Security Officer mode. Infrastructure-first security audit: secrets archaeology, dependency supply chain, CI/CD pipeline security, LLM/AI security, skill supply chain scanning, plus OWASP Top 10, STRIDE threat modeling, and active verification. Two modes: daily (zero-noise, 8/10 confidence gate) and comprehensive (monthly deep scan, 2/10 bar). Trend tracking across audit runs. Use when: \"security audit\", \"threat model\", \"pentest review\", \"OWASP\", \"CSO review\". (gstack) Voice triggers (spee
+concept:
+  id: undefinedcso
+  name: Cso
 tags: [gstack, qa, engineering, security, product]
 when_to_use:
   - security audit
@@ -14,8 +17,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: cso/SKILL.md
+  priority: 100
   path: cso/SKILL.md
 ---
 

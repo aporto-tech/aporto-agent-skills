@@ -2,6 +2,9 @@
 id: gstack-benchmark-models
 name: Benchmark Models
 description: Cross-model benchmark for gstack skills. Runs the same prompt through Claude, GPT (via Codex CLI), and Gemini side-by-side — compares latency, tokens, cost, and optionally quality via LLM judge. Answers \"which model is actually best for this skill?\" with data instead of vibes. Separate from /benchmark, which measures web page performance. Use when: \"benchmark models\", \"compare models\", \"which model is best for X\", \"cross-model comparison\", \"model shootout\". (gstack) Voice triggers (speech-to-tex
+concept:
+  id: undefinedbenchmark-models
+  name: Benchmark Models
 tags: [gstack, engineering, performance, agent-tooling]
 when_to_use:
   - which model is actually best for this skill?
@@ -14,8 +17,13 @@ required_capabilities:
   - repository_read
 context_cost: medium
 source:
+  slug: gstack
   name: gstack
+  display_name: gstack
+  author: Garry Tan
   url: https://github.com/garrytan/gstack
+  path: benchmark-models/SKILL.md
+  priority: 100
   path: benchmark-models/SKILL.md
 ---
 
